@@ -108,13 +108,13 @@ export default function Page() {
 
     const handleEdit = (id) => {
         // Construir la URL con el ID del producto
-        const editUrl = `http://localhost:3000/products/edit/${id}`;
+        const editUrl = `/products/edit/${id}`;
         // Redirigir al usuario a la URL de edición
         window.location.href = editUrl;
     }
 
     const handleVer = (id) => {
-        const editUrl = `http://localhost:3000/products/${id}`;
+        const editUrl = `/products/${id}`;
         window.location.href = editUrl;
     }
 
@@ -138,7 +138,7 @@ export default function Page() {
                     }} />
                 <button type='submit' className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-6 ml-2 rounded">Buscar</button>
                
-                <a href="http://localhost:3000/products/create" className="bg-green-500 hover:bg-green-700 text-white font-bold py-3 px-6 ml-2 rounded">
+                <a href="/products/create" className="bg-green-500 hover:bg-green-700 text-white font-bold py-3 px-6 ml-2 rounded">
                     Agregar +
                 </a>
            

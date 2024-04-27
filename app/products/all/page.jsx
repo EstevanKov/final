@@ -85,7 +85,7 @@ export default function Page() {
     }
 
     const handleEdit = (id) => {
-        const editUrl = `http://localhost:3000/products/edit/${id}`;
+        const editUrl = `/products/edit/${id}`;
         window.location.href = editUrl;
     }
 
@@ -99,7 +99,7 @@ export default function Page() {
             <form className='text-center mt-3' onSubmit={(e) => { e.preventDefault(); }}>
                 <input placeholder='Buscar' className='border rounded px-2 text-black' defaultValue={search} onChange={(e) => setSearch(e.target.value)} />
                 <button type='submit' className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-6 ml-2 rounded">Buscar</button>
-                <a href="http://localhost:3000/products/create" className="bg-green-500 hover:bg-green-700 text-white font-bold py-3 px-6 ml-2 rounded">
+                <a href="/products/create" className="bg-green-500 hover:bg-green-700 text-white font-bold py-3 px-6 ml-2 rounded">
                     Agregar +
                 </a>
             </form>
