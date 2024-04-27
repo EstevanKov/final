@@ -105,7 +105,7 @@ export default function Login({
           required
         />
         
-       <center> <p>click aquí para recuperar tu sesión <u><a href="http://localhost:3000/login/link">Página de recuperación</a></u></p></center>
+       <center> <p>click aquí para recuperar tu sesión <u><a href="/login/link">Página de recuperación</a></u></p></center>
         <button className="bg-green-700 rounded-md px-4 py-2 text-foreground mb-2">
           Sign In
         </button>
